@@ -26,7 +26,7 @@ spec:
         containers:
         - name: myapp-container
             image: nginx
-    ```
+```
     
 - Replica Set Definition File
 ```yaml
