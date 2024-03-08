@@ -15,16 +15,16 @@ kind: Pod
 metadata:
   name: myapp-pod
 spec:
-    containers:
-    - name: myapp-container
-        image: nginx
-        resources:
-            requests:
-                memory: "64Mi"
-                cpu: "250m"
-            limits:
-                memory: "128Mi"
-                cpu: "500m"
+  containers:
+  - name: myapp-container
+    image: nginx
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "250m"
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
 ```
 
 - The above resource requirements will ensure that the container in the pod has a request of 64Mi memory and 250m CPU, and a limit of 128Mi memory and 500m CPU.
