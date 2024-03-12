@@ -29,6 +29,6 @@
     - **One by one:** We can upgrade one worker node at a time.
     - **Adding new VMs:** We can add new VMs with the new version and then remove the old VMs.
 
-To upgrade the cluster, Refer the official documentation: [Kubernetes Cluster Upgrade](https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/)
+To upgrade the cluster fully, Refer the official documentation: [Kubernetes Cluster Upgrade](https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/)
 
 Date of Commit: 09/03/2024
