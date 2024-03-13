@@ -7,5 +7,19 @@
     - There are many other api groups are there like version, healthz, metrics and logs etc.
 - For Example `curl https://kube-master:6443/version` will return kubernets version, `curl https://kube-master:6443/api/v1/pods` will return all the pods in the cluster.
 
+### Listing API Groups
+
+- We can list the API groups by running the following command:
+```bash
+curl -k https://kube-master:6443 or curl -k https://kube-master:6443/apis
+```
+- We can also list the API groups by running the following command:
+```bash
+kubectl api-resources
+```
+- But remember when we use `curl` command, We also need to specify out key, cert and ca file.
+- To avoid this we can use `kubectl-proxy` command.
+- `kubectl-proxy` command will create a proxy server. It will listen on port 8001. And it will forward the request to the kube-apiserver.
+- So instead of using `curl https://kube-master:6443`, we can use `curl http://localhost:8001`. So the request will be forwarded to the kube-apiserver.
 
 Date of Commit: 11/03/2024
